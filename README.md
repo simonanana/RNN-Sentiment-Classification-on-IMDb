@@ -6,7 +6,6 @@
 
 A systematic empirical study of **recurrent and non-recurrent neural architectures** for binary sentiment classification on the IMDb movie-review dataset, implemented in PyTorch.
 
----
 
 ## Project Overview
 
@@ -16,7 +15,6 @@ This project benchmarks six deep-learning architectures across three controlled 
 2. **Epochs** — Does training a vanilla RNN longer improve performance?  
 3. **Architectures** — How do FFN, CNN, LSTM, and Bi-LSTM compare on long-document sentiment?
 
----
 
 ## Repository Structure
 
@@ -30,7 +28,6 @@ rnn-sentiment-classification/
 └── README.md
 ```
 
----
 
 ## Experimental Setup
 
@@ -55,7 +52,6 @@ Three experiment groups:
 - **Experiment 2** — 5 / 10 / 20 / 50 epochs (Adam, Baseline RNN)  
 - **Experiment 3** — FFN-1/2/3, CNN, LSTM, Bi-LSTM (Adam, 50 epochs)
 
----
 
 ## Results Summary
 
@@ -97,7 +93,6 @@ Key observations:
 - **FFNs** are the least efficient (>17M parameters, ~81% accuracy) — flattening discards sequential structure.
 - **Bi-LSTM** slightly underperforms LSTM under these hyperparameters, likely due to overfitting from the larger parameter count.
 
----
 
 ## Key Insights
 
@@ -113,7 +108,6 @@ CNN and LSTM achieve strong results with compact models, while FFNs are more tha
 ### 4. Pre-trained Embeddings Would Further Improve Performance
 All experiments use randomly initialised embeddings trained from scratch. Substituting pre-trained GloVe or Word2Vec embeddings would be expected to accelerate convergence and improve accuracy, especially for data-scarce settings.
 
----
 
 ## Getting Started
 
