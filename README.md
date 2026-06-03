@@ -122,7 +122,6 @@ pip install torch torchvision tensorflow numpy pandas matplotlib seaborn
 Open `rnn_sentiment_classification.ipynb` in Jupyter Lab / Google Colab and run all cells.  
 A GPU is strongly recommended for Experiment 3 (50-epoch training of 6 models).
 
----
 
 ## License
 
